@@ -18,6 +18,10 @@ ln -s /vagrant /var/www/html
 service httpd start
 
 #php
+yum install -y php php-cli php-common php-devel php-mysql
+
+
+#MySQL
 yum install -y mysql mysql-server mysql-devel
 chkconfig --add mysqld
 chkconfig mysqld on
